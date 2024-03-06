@@ -7,6 +7,6 @@ load_dotenv()
 from logger import Logger
 from utils import set_interval
 
-Logger = Logger(os.getenv("HYPERDX_API_KEY"))
+my_logger = Logger(os.getenv("HYPERDX_API_KEY"))
 
-set_interval(Logger.info, 1)
+set_interval(my_logger.info, 5)
